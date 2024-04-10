@@ -1,17 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Title>TT Domain Types</Title>
-    <Authors>Eltee Taiwo</Authors>
-    <Company>TaiwoTech</Company>
-    <Description>A record based solution to the primitive type obsession problem</Description>
-    <Copyright>2022</Copyright>
-    <PackageProjectUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>TT Domain Types</Title>
+		<Authors>Eltee Taiwo</Authors>
+		<Company>TaiwoTech</Company>
+		<Description>A record based solution to the primitive type obsession problem</Description>
+		<Copyright>2022</Copyright>
+		<PackageProjectUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>

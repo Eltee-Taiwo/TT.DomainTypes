@@ -12,7 +12,17 @@
 		<PackageProjectUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Eltee-Taiwo/TT.DomainTypes</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="2.1.35" />
